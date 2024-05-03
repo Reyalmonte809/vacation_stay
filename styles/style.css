@@ -1,0 +1,101 @@
+#icon {
+    text-align: left;
+    padding: 1rem;
+    width: 150px;
+    height: 100px;
+    margin: 1rem 0rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    background-color: darkturquoise;
+   
+    
+}
+
+.navbar{
+    margin: 1rem 0rem;
+    /* background-color: white;
+    padding: 0rem .rem; */
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+a {
+    color: coral;
+    text-decoration: none;
+    font-size: 36px;
+    padding: 0rem 1rem;
+    
+}
+.title{
+    text-align: center;
+}
+
+#lobby{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.paragraph{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer{
+    background-color: darkturquoise;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.reserve{
+    border: solid 1px darkturquoise;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem;
+    text-align: center;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+}
+
+#king{
+    width: 250px;
+    height: 250px;
+}
+#queen{
+    width: 250px;
+    height: 250px;
+}
+#suite{
+    width: 250px;
+    height: 250px;
+}
+
+#bedroom{
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3rem;
+    
+}
+.roomType, .discounts{
+    margin-top: 1rem;
+}
+
+#estimatedCost{
+    margin-top: 1rem;
+
+}
+
