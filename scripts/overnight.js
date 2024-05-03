@@ -3,7 +3,7 @@ const percent = p => (p * 100).toFixed(0) + "%";
 
 document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("estimatedCost").addEventListener("click", ()=>{
-        debugger
+    
         let total = 0;
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
@@ -42,14 +42,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }else if(peakSeason){
             rate = 250;
         }
+        debugger
         const days = nights - checkInDate
         const ms = 1000 * 60 * 60 * 24
-        const costPerDay = days / ms
+        const costPerDay = days / ms - 1
         total = costPerDay * rate;
         const discountAmount = total * discount;
-        const discountedTotal = total - discountAmount;
-        const tax = discountedTotal * 0.2
-        const overallTotal = tax + discountedTotal
+        const discountedTotal = total + discountAmount;
+        // const tax = discountedTotal * 0.2
+        // const overallTotal = tax + discountedTotal
 
         // const text = `
         // Name: ${name}
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         // Discounted Total: ${currency(discountedTotal)}
         
         
-        totalCost.value = overallTotal;
+        totalCost.value = discountedTotal;
     });
     
 });
